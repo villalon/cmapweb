@@ -1,0 +1,63 @@
+<!doctype html>
+<!-- The DOCTYPE declaration above will set the    -->
+<!-- browser's rendering engine into               -->
+<!-- "Standards Mode". Replacing this declaration  -->
+<!-- with a "Quirks Mode" doctype may lead to some -->
+<!-- differences in layout.                        -->
+
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+ 	<meta http-equiv="X-UA-Compatible" content="IE=8" />
+ 	<meta name="gwt:property" content="locale=en">
+    <!--                                                               -->
+    <!-- Consider inlining CSS to reduce the number of requested files -->
+    <!--                                                               -->
+    <link type="text/css" rel="stylesheet" href="CmapWeb.css">
+
+    <!--                                           -->
+    <!-- Any title is fine                         -->
+    <!--                                           -->
+    <title>Concept Map Question Type for Moodle</title>
+    
+    <!--                                           -->
+    <!-- This script loads your compiled module.   -->
+    <!-- If you add any GWT meta tags, they must   -->
+    <!-- be added before this line.                -->
+    <!--                                           -->
+    <script type="text/javascript" language="javascript" src="cmapweb/cmapweb.nocache.js"></script>
+  </head>
+
+  <!--                                           -->
+  <!-- The body can have arbitrary html, or      -->
+  <!-- you can leave the body empty if you want  -->
+  <!-- to create a completely dynamic UI.        -->
+  <!--                                           -->
+  <body>
+    <!-- OPTIONAL: include this if you want history support -->
+    <iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1' style="position:absolute;width:0;height:0;border:0"></iframe>
+    <!-- RECOMMENDED if your web app will not function without JavaScript enabled -->
+    <noscript>
+      <div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+        Your web browser must have JavaScript enabled
+        in order for this application to display correctly.
+      </div>
+    </noscript>
+    <table align="center" height="100%">
+    <tr>
+    <td><h2>Concept Map Question Type for Moodle</h2></td>
+    </tr>
+    <tr>
+    <td>    <div id="conceptmap" 
+    	readonly="false"
+    	input="myinput"
+    	width="640"
+    	height="480"></div>
+    	<!-- <textarea rows="20" cols="100" id="myinput">%3C?xml%20version=%221.0%22%20?%3E%3Cconceptmap%20title=%22Untitled%22%3E%3Cconcept%20id=%223%22%20label=%22Concept%20Maps%22%20posx=%22264%22%20posy=%229%22/%3E%3Cconcept%20id=%224%22%20label=%22Joseph%20Novak%22%20posx=%2240%22%20posy=%2283%22/%3E%3Cconcept%20id=%225%22%20label=%22Focus%20question(s)%22%20posx=%22489%22%20posy=%2289%22/%3E%3Cconcept%20id=%226%22%20label=%22Organized%20Knowledge%22%20posx=%22237%22%20posy=%22131%22/%3E%3Cconcept%20id=%227%22%20label=%22Associated%20feelings%20or%20affect%22%20posx=%220%22%20posy=%22181%22/%3E%3Cconcept%20id=%228%22%20label=%22Context%20dependent%22%20posx=%22502%22%20posy=%22175%22/%3E%3Cconcept%20id=%229%22%20label=%22Effective%20teaching%22%20posx=%22499%22%20posy=%22238%22/%3E%3Cconcept%20id=%2210%22%20label=%22Effective%20learning%22%20posx=%22489%22%20posy=%22301%22/%3E%3Cconcept%20id=%2211%22%20label=%22Concepts%22%20posx=%2211%22%20posy=%22279%22/%3E%3Cconcept%20id=%2212%22%20label=%22Linking%20words%22%20posx=%22188%22%20posy=%22322%22/%3E%3Cconcept%20id=%2213%22%20label=%22Propositions%22%20posx=%22360%22%20posy=%22286%22/%3E%3Cconcept%20id=%2214%22%20label=%22Labeled%22%20posx=%2296%22%20posy=%22358%22/%3E%3Cconcept%20id=%2215%22%20label=%22Symbols%22%20posx=%2237%22%20posy=%22439%22/%3E%3Cconcept%20id=%2216%22%20label=%22Words%22%20posx=%22212%22%20posy=%22445%22/%3E%3Cconcept%20id=%2217%22%20label=%22Units%20of%20meaning%22%20posx=%22344%22%20posy=%22366%22/%3E%3Cconcept%20id=%2218%22%20label=%22Cognitive%20structure%22%20posx=%22423%22%20posy=%22441%22/%3E%3Crelationship%20id=%222%22%20source=%223%22%20target=%226%22%20linkingWord=%22represent%22%20posx=%22294%22%20posy=%2283%22/%3E%3Crelationship%20id=%223%22%20source=%223%22%20target=%225%22%20linkingWord=%22help%20to%20answer%22%20posx=%22414%22%20posy=%2249%22/%3E%3Crelationship%20id=%224%22%20source=%225%22%20target=%228%22%20linkingWord=%22are%22%20posx=%22495%22%20posy=%22132%22/%3E%3Crelationship%20id=%225%22%20source=%223%22%20target=%224%22%20linkingWord=%22were%20developed%20by%22%20posx=%2283%22%20posy=%2236%22/%3E%3Crelationship%20id=%226%22%20source=%226%22%20target=%227%22%20linkingWord=%22includes%22%20posx=%22112%22%20posy=%22133%22/%3E%3Crelationship%20id=%227%22%20source=%226%22%20target=%2211%22%20linkingWord=%22is%20comprised%20of%22%20posx=%22225%22%20posy=%22207%22/%3E%3Crelationship%20id=%228%22%20source=%226%22%20target=%2213%22%20linkingWord=%22is%20comprised%20of%22%20posx=%22225%22%20posy=%22207%22/%3E%3Crelationship%20id=%229%22%20source=%2211%22%20target=%2212%22%20linkingWord=%22connected%20by%22%20posx=%22103%22%20posy=%22283%22/%3E%3Crelationship%20id=%2210%22%20source=%2212%22%20target=%2213%22%20linkingWord=%22to%20form%22%20posx=%22281%22%20posy=%22282%22/%3E%3Crelationship%20id=%2211%22%20source=%2211%22%20target=%2214%22%20linkingWord=%22are%22%20posx=%2253%22%20posy=%22318%22/%3E%3Crelationship%20id=%2212%22%20source=%2214%22%20target=%2215%22%20linkingWord=%22with%22%20posx=%22154%22%20posy=%22401%22/%3E%3Crelationship%20id=%2213%22%20source=%2214%22%20target=%2216%22%20linkingWord=%22with%22%20posx=%22154%22%20posy=%22401%22/%3E%3Crelationship%20id=%2214%22%20source=%226%22%20target=%229%22%20linkingWord=%22necessary%20for%22%20posx=%22363%22%20posy=%22216%22/%3E%3Crelationship%20id=%2215%22%20source=%226%22%20target=%2210%22%20linkingWord=%22necessary%20for%22%20posx=%22363%22%20posy=%22216%22/%3E%3Crelationship%20id=%2216%22%20source=%2213%22%20target=%2217%22%20linkingWord=%22are%22%20posx=%22352%22%20posy=%22326%22/%3E%3Crelationship%20id=%2217%22%20source=%2217%22%20target=%2218%22%20linkingWord=%22constructed%20in%22%20posx=%22383%22%20posy=%22403%22/%3E%3C/conceptmap%3E</textarea> -->
+    	<textarea rows="20" cols="100" id="myinput">%3C?xml%20version=%221.0%22%20?%3E%3Cconceptmap%20title=%22Sin%20t%C3%ADtulo%22%3E%3Cconcept%20id=%221%22%20label=%22A%22%20posx=%22279,84375%22%20posy=%2270,5%22/%3E%3Cconcept%20id=%222%22%20label=%22B%22%20posx=%22399.84375%22%20posy=%22240.5%22/%3E%3Cconcept%20id=%223%22%20label=%22D%22%20posx=%22188.84375%22%20posy=%22238.5%22/%3E%3Crelationship%20id=%221%22%20source=%221%22%20target=%222%22%20linkingWord=%22c%22%20posx=%22339.84375%22%20posy=%22155.5%22/%3E%3Crelationship%20id=%222%22%20source=%221%22%20target=%223%22%20linkingWord=%22s%22%20posx=%22234.84375%22%20posy=%22154.5%22/%3E%3C/conceptmap%3E</textarea>
+    </td>
+    </tr>
+    </table>
+
+  </body>
+</html>

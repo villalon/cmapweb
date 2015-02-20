@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ====================================================================== 
+     14-02-2011 17:16:01                                                        
+
+     CmapWeb    
+     This ant file helps on deploying CmapWeb to a Moodle server
+                   
+     Jorge Villalon (villalon@gmail.com)                                                                
+     ====================================================================== -->
+<project name="CmapWeb" default="deploy-local">
+    <description>
+            Deploy the Concept Map web based editor as a zip file to a Moodle server.
+    </description>
+	
+	<property name="moodle.dir"     value="C:/xampp/htdocs/webcursos"/>
+
+	<target name="increment_build_number">
+	<propertyfile file="war/build.number"
+	              comment="Build Number for ANT. Edit not!">
+	<entry key="build.number" type="int" 
+	     operation="+" 
+	     default="1" />
+	</propertyfile>
+	</target>
+	
+    <!-- ================================= 
+          target: deploy              
+         ================================= -->
+    <target name="deploy-local" depends="increment_build_number">
+    	
+    	<delete dir="${moodle.dir}/question/type/conceptmap/cmapweb/"/>
+    	
+    	<copy todir="${moodle.dir}/question/type/conceptmap/cmapweb/">
+    		<fileset dir="war/">
+    			<exclude name="**/CmapWeb.html"/>
+    			<exclude name="**/WEB-INF/"/>
+    		</fileset>
+    	</copy>
+    	
+    	<zip destfile="qtype_conceptmap.zip">
+    		<zipfileset dir="${moodle.dir}/question/type/"
+    			includes="conceptmap/**"
+    		/>
+    	</zip>
+
+    	</target>
+	
+        <target name="deploy" depends="deploy-local">
+    	<scp file="qtype_conceptmap.zip" todir="ubuntu@www.villalon.cl:/home/ubuntu/" trust="yes" keyfile="C:\Users\jorge\Dropbox\Casa\AWS\jorgevillalon.pem"/>
+    </target>
+</project>

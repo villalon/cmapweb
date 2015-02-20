@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<conceptmap title="What are Concept Maps?">
+	<concept id="3" label="Concept Maps" posx="264" posy="9" />
+	<concept id="4" label="Joseph Novak" posx="40" posy="83" />
+	<concept id="5" label="Focus question(s)" posx="489" posy="89" />
+	<concept id="6" label="Organized Knowledge" posx="237" posy="131" />
+	<concept id="7" label="Associated feelings or affect" posx="0"
+		posy="181" />
+	<concept id="8" label="Context dependent" posx="502" posy="175" />
+	<concept id="9" label="Effective teaching" posx="499" posy="238" />
+	<concept id="10" label="Effective learning" posx="489" posy="301" />
+	<concept id="11" label="Concepts" posx="11" posy="279" />
+	<concept id="12" label="Linking words" posx="188" posy="322" />
+	<concept id="13" label="Propositions" posx="360" posy="286" />
+	<concept id="14" label="Labeled" posx="96" posy="358" />
+	<concept id="15" label="Symbols" posx="37" posy="439" />
+	<concept id="16" label="Words" posx="212" posy="445" />
+	<concept id="17" label="Units of meaning" posx="344" posy="366" />
+	<concept id="18" label="Cognitive structure" posx="423" posy="441" />
+	<relationship id="2" source="3" target="6" linkingWord="represent"
+		posx="294" posy="83" />
+	<relationship id="3" source="3" target="5" linkingWord="help to answer"
+		posx="414" posy="49" />
+	<relationship id="4" source="5" target="8" linkingWord="are"
+		posx="495" posy="132" />
+	<relationship id="5" source="3" target="4" linkingWord="were developed by"
+		posx="83" posy="36" />
+	<relationship id="6" source="6" target="7" linkingWord="includes"
+		posx="112" posy="133" />
+	<relationship id="7" source="6" target="11" linkingWord="is comprised of"
+		posx="225" posy="207" />
+	<relationship id="8" source="6" target="13" linkingWord="is comprised of"
+		posx="225" posy="207" />
+	<relationship id="9" source="11" target="12" linkingWord="connected by"
+		posx="103" posy="283" />
+	<relationship id="10" source="12" target="13" linkingWord="to form"
+		posx="281" posy="282" />
+	<relationship id="11" source="11" target="14" linkingWord="are"
+		posx="53" posy="318" />
+	<relationship id="12" source="14" target="15" linkingWord="with"
+		posx="154" posy="401" />
+	<relationship id="13" source="14" target="16" linkingWord="with"
+		posx="154" posy="401" />
+	<relationship id="14" source="6" target="9" linkingWord="necessary for"
+		posx="363" posy="216" />
+	<relationship id="15" source="6" target="10" linkingWord="necessary for"
+		posx="363" posy="216" />
+	<relationship id="16" source="13" target="17" linkingWord="are"
+		posx="352" posy="326" />
+	<relationship id="17" source="17" target="18" linkingWord="constructed in"
+		posx="383" posy="403" />
+</conceptmap>
