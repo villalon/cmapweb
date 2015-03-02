@@ -152,3 +152,11 @@ HTML, BODY {
 	margin: 1px;
 	cursor: pointer;
 }
+
+.addConceptCursor {
+	cursor: url('addconcept.cur'), auto;
+}
+
+.addRelationshipCursor {
+	cursor: url('addrelationship.cur'), auto;
+}

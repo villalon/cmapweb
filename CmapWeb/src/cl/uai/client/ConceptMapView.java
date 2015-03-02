@@ -65,7 +65,6 @@ import com.google.gwt.event.logical.shared.CloseEvent;
 import com.google.gwt.event.logical.shared.CloseHandler;
 import com.google.gwt.http.client.RequestException;
 import com.google.gwt.http.client.URL;
-import com.google.gwt.user.client.DOM;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.AbsolutePanel;
@@ -878,9 +877,9 @@ public class ConceptMapView extends Composite {
 		this.inAddConceptMode = inAddConceptMode;
 		if(inAddConceptMode) {
 			this.setInAddRelationshipMode(false);
-			DOM.setStyleAttribute(focusPanel.getElement(), "cursor", "url(addconcept.cur),auto");
+			focusPanel.addStyleName("addConceptCursor");
 		} else {
-			DOM.setStyleAttribute(focusPanel.getElement(), "cursor", "auto");
+			focusPanel.removeStyleName("addConceptCursor");
 		}
 	}
 
@@ -888,9 +887,10 @@ public class ConceptMapView extends Composite {
 		this.inAddRelationshipMode = inAddRelationshipMode;
 		if(inAddRelationshipMode) {
 			this.setInAddConceptMode(false);
-			DOM.setStyleAttribute(focusPanel.getElement(), "cursor", "url(addrelationship.cur),auto");
+			focusPanel.addStyleName("addRelationshipCursor");
+			// DOM.setStyleAttribute(focusPanel.getElement(), "cursor", "url(addrelationship.cur),auto");
 		} else {
-			DOM.setStyleAttribute(focusPanel.getElement(), "cursor", "auto");
+			focusPanel.removeStyleName("addRelationshipCursor");
 			addRelationshipLine.setX1(0);
 			addRelationshipLine.setY1(0);
 			addRelationshipLine.setX2(0);

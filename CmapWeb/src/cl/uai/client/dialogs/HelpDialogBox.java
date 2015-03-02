@@ -47,7 +47,7 @@ public class HelpDialogBox extends DialogBox {
 		vpanel = new VerticalPanel();
 		
 
-		String lblCopyright = "<br/><div align=\"center\"><font size=1>Copyright (c) 2011 <a href=\"http://www.villalon.cl\">Jorge Villalon</a></font></div><br/>";
+		String lblCopyright = "<br/><div align=\"center\"><font size=1>Copyright (c) 2011-2015 <a href=\"http://www.villalon.cl\">Jorge Villalon</a></font></div><br/>";
 		
 		this.setHTML(messages.getString("HelpTitle")); //$NON-NLS-1$
 		vpanel.add(new HTML(messages.getString("HelpAddConcepts")));
